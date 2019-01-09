@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        ul, li {
+            list-style: none;
+        }
+        
+        #container {
+            font-family: "맑은 고딕";
+            
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+            height: auto;
+        }
+        
+        #big_header {
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           width: 100%;
+           height: 946px; /*calc(946/1700*100%);*/
+        }
+        
+        .top_header {
+            width: 100%;
+            height: calc(140/1700*100%);
+            
+            position: absolute;
+            display: flex;
+            
+            justify-content: space-around;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 5rem;
+            
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        ul {
+            width: 45%;
+            
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        li {
+            display: inline-block;
+            padding-right: 3rem;
+            font-weight: 600;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            
+            transition-duration: 0.5s;
+        }
+        
+        a:hover{
+            color: #53d7d9;
+        }
+        
+        li:nth-child(6){
+            padding-right: 0;
+        }
+        
+        img {
+            width: 10rem;
+            height: 5rem;
+        }
+        
+        .bottom_header {
+            width: 100%;
+            height: 55%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+            position: absolute;
+        }
+        
+        .title {
+            height: auto;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-start;
+        }
+        
+        .title > h1 {
+            color: white;
+            text-align: center;
+            font-size: 6rem;
+            font-weight: bolder;
+            margin: 0;
+        }
+        
+        .title > h3 {
+            font-size: 1.9rem;
+            color: white;
+            text-align: center;
+            margin: 0;
+            margin-top: 1.2rem;
+            font-weight: 600;
+
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        span {
+            color: #53d7d9;
+        }
+        
+        #content {
+           width: 100%;
+           height: calc(956/1700*100%);
+            
+           display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .text {
+            width: 40rem;
+            height: calc(150/1700*100%);
+            text-align: center;
+            
+            margin-bottom: 2rem;
+            padding-top: calc(100/1700*100%);
+        }
+        
+        .text > p {
+            color: #595d7b;
+            font-weight: 600;
+            
+            font-size: 1.2rem;
+        }
+        
+        .circle {
+            display: flex;
+            height: calc(40/1700*100%);
+            width: 15em;
+            background: url(page.png) no-repeat center;
+            background-size: 100%;
+            margin-bottom: 6rem;
+            
+            justify-content: center;
+        }
+        
+        .circle > h4 {
+            font-size: 0.95rem;
+            text-align: center;
+            color: black;
+        }
+        
+        .pic {
+            width: 45%;
+            height: auto;
+            
+            position: relative;
+            z-index: 50;
+            display: flex;
+            
+            padding-bottom: 5rem;
+        }
+        
+        .pic > img {
+            width: 100%;
+            height: auto;
+            padding-top: 
+            
+            position: absolute;
+        }
+        
+
+    </style>
+</head>
+<body>
+   <div id="container">
+
+    <div id="big_header">
+           <div class="top_header">
+               <div class="menu">
+            <img src="logo.png" alt="">
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Client Stories</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+           </div>
+           
+           <div class="bottom_header">
+            <div class="title">
+            <h1>Powering music</h1>
+        <h3>streaming <span>/</span> curation <span>/</span> intelligence</h3>
+        </div> 
+           </div>
+            
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EuMHZxs_C0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    </div>
+    <div id="content">
+        <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit odio incidunt dolor, explicabo earum iste minus autem nihil, neque quae ipsam ratione provident dolore similique saepe quia aut doloribus dolore similique saepe quia aut doloribus.</p>
+        </div>
+        <div class="circle"><h4>MORE ABOUT 7DIGITAL</h4></div>
+         <div class="pic">
+         <img src="phone.png" alt="">
+    </div>
+    </div>
+</body>
+</html>
